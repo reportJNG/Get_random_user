@@ -1,0 +1,49 @@
+/* LIGHT THEME DEFAULT */
+:root {
+  --bg: #ffffff;
+  --text: #0f0f0f;
+  --about-height: 88px; /* Adjust depending on footer real size */
+
+  /* Needed for your cards, sidebar, buttons */
+  --card: #f3f3f3;
+
+  /* Needed for rgba(var(--text-rgb), x) */
+  --text-rgb: 15, 15, 15;
+}
+
+/* DARK THEME */
+:root[data-theme="dark"] {
+  --bg: #0f0f0f;
+  --text: #ffffff;
+
+  --card: #1a1a1a;
+
+  --text-rgb: 255, 255, 255;
+}
+
+/* APPLY VARIABLES */
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+  min-height: 0;
+  display: flex;
+  max-width: 100vw;
+  flex-direction: column;
+  overflow-x: hidden;
+  height: 100%;
+  
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

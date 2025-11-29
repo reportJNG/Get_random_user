@@ -1,0 +1,179 @@
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css');
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
+/* -------------------------------------------------------------
+   PREMIUM HEADER — MATCHES global.css VARIABLES
+   Uses:
+   --bg
+   --text
+-------------------------------------------------------------- */
+
+.container {
+  width: 100%;
+  height: 74px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 26px;
+  background: var(--bg);
+  color: var(--text);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-bottom: 1px solid rgba(var(--text-rgb), 0.08);
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* ================= LEFT ================= */
+.leftscreen {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+/* Logo image */
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;     /* Clean rounded corners */
+  object-fit: cover;
+  cursor: pointer;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover effect */
+.logo:hover {
+  transform: scale(1.06);
+  box-shadow: 0 4px 14px rgba(var(--text-rgb), 0.18);
+}
+
+/* ================= MIDDLE ================= */
+.midscreen {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+
+  color: var(--text);
+  transition: color 0.3s ease;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* ================= RIGHT ================= */
+.rightscreen {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.rightscreen button {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+  background: rgba(var(--text-rgb), 0.10);
+  border: 1px solid rgba(var(--text-rgb), 0.15);
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s,
+    transform 0.25s,
+    box-shadow 0.25s,
+    border-color 0.25s;
+}
+
+.rightscreen button:hover {
+  background: rgba(var(--text-rgb), 0.18);
+  transform: translateY(-2px) scale(1.06);
+  box-shadow: 0 4px 14px rgba(var(--text-rgb), 0.2);
+  border-color: rgba(var(--text-rgb), 0.25);
+}
+.prof i:hover {
+  color: rgb(0, 38, 255);       /* Blue */
+}
+
+.git i:hover {
+  color: rgb(70, 11, 179);      /* Purple */
+}
+
+.insta i:hover {
+  color: rgb(255, 102, 0);      /* Orange */
+}
+
+
+.rightscreen i,
+.rightscreen svg {
+  font-size: 21px;
+  color: var(--text);
+  transition: color 0.3s ease;
+}
+
+/* theme-specific accents */
+.lightbtn svg{
+  color: #1705bd;
+}
+
+.darkbtn svg {
+  color: #facc15;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 600px) {
+  .container {
+    height: 67px;
+    padding: 0 18px;
+  }
+
+  .title {
+    font-size: 19px;
+  }
+
+  .rightscreen button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .leftscreen i {
+    font-size: 26px;
+  }
+}
+.mid {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.mid img {
+  border-radius: 12px;
+  
+
+  box-shadow: 0 0 16px rgba(var(--text-rgb), 0.2);
+  width: 60px;
+  height: auto;
+}
+.image{
+  border:  solid var(--text) ;
+}
