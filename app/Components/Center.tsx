@@ -33,7 +33,7 @@ export default function Center() {
         {user && (
           <div className={styles.card}>
             {/* Identity */}
-            <h3 className={styles.sectionTitle}>Identity</h3>
+            <h3 className={styles.sectionTitle}>IDentity</h3>
             <div className={styles.row}><FiUser /> <span>{user.name.first} {user.name.last}</span></div>
             <div className={styles.row}><FiUser /> <span>{user.gender}</span></div>
 
